@@ -1,0 +1,50 @@
+.container {
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.customButton {
+  width: 100%;
+  background: #ff9100;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  padding: inherit;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.has_cart {
+  display: flex;
+  margin: 0 4rem;
+  justify-content: space-around;
+}
+
+.item {
+  font-size: 1rem;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+
+.btn_has_cart {
+  width: 20%;
+  height: 35px;
+  background: #ff9100;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  padding: inherit;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.btn_has_cart_minus {
+  background-color: white;
+  border: 1px solid #ff9100;
+}
+

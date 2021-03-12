@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Layout, Header, Product } from "./components";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import {
+  faCheckSquare,
+  faHeart,
+  faArrowLeft,
+  faShoppingCart,
+  faStar,
+  faCogs,
+  faPlus,
+  faMinus,
+  faTimesCircle
+} from "@fortawesome/free-solid-svg-icons";
+import { Context } from "./Context";
+import BottomSheet from "./components/Product/BottomSheet";
+import UIConfig from "./components/UIConfig";
+
+library.add(
+  far,
+  faCheckSquare,
+  faHeart,
+  faArrowLeft,
+  faShoppingCart,
+  faStar,
+  faCogs,
+  faPlus,
+  faMinus,
+  faTimesCircle
+);
 
 function App() {
+  const [item, setItem] = useState(0);
+  const [floatingMode, setFloatingMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context.Provider
+      value={{
+        item,
+        setItem,
+        floatingMode,
+        setFloatingMode,
+        darkMode,
+        setDarkMode,
+      }}
+    >
+      <Layout>
+        <Header />
+        <Product />
+        {floatingMode && <BottomSheet type="sticky" />}
+        <UIConfig />
+      </Layout>
+    </Context.Provider>
   );
 }
 

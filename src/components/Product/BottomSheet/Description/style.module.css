@@ -1,0 +1,21 @@
+.container {
+  padding: 15px 15px 10px 15px;
+  margin: 0px 0px 15px 0px;
+}
+
+.productDescription {
+  font-size: large;
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+}
+
+.description {
+  padding-bottom: 1rem;
+}
+
+.toogle {
+  float: right;
+  color: dodgerblue;
+  font-weight: 500;
+  cursor: pointer;
+}

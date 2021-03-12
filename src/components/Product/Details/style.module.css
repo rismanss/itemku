@@ -1,0 +1,50 @@
+.container {
+  padding: 10px 15px;
+}
+
+.icon {
+  float: right;
+  cursor: pointer;
+}
+
+.item {
+  font-size: large;
+  font-weight: bold;
+}
+
+.game {
+  font-size: small;
+  color: gray;
+}
+
+.itemPrice {
+  padding: 10px 0px 5px 0px;
+}
+
+.price {
+  font-size: larger;
+  font-weight: bold;
+  color: red;
+}
+
+.descPrice {
+  font-size: small;
+  color: gray;
+}
+
+.discount {
+  background: red;
+  width: fit-content;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-size: smaller;
+  float: left;
+  margin-right: 5px;
+  color: white;
+}
+
+.normalPrice {
+  font-size: small;
+  color: gray;
+  text-decoration: line-through;
+}

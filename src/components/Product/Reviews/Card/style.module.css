@@ -1,0 +1,47 @@
+.card {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
+.card:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.review {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header {
+  padding: 0px 0px 10px 0px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.date {
+  float: right;
+  color: gray;
+  font-size: smaller;
+}
+
+.item {
+  font-weight: bold;
+}
+
+.stars {
+  padding: 5px 0px 2px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: fit-content;
+  }
+}
